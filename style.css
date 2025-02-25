@@ -1,3 +1,71 @@
 h1 {
   color: blueviolet;
+  position: relative;
+  bottom: 50px;
+}
+body {
+  background: lightblue;
+}
+.container {
+  display: block;
+  border: 50px solid white;
+  border-radius: 15px;
+  background: white;
+  max-width: 400px;
+  line-height: 40px;
+  position: relative;
+  left: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  box-shadow: rgba(209, 206, 206, 0.588);
+}
+select {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border-radius: 2px;
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.849);
+  margin: 0 auto;
+}
+hr {
+  border: none; /* Remove default border */
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(156, 154, 154, 0.519),
+    rgba(156, 154, 154, 0.484) 5px,
+    transparent 5px,
+    transparent 10px
+  ); /* Create a dashed line effect */
+  margin: 0; /* Remove top and bottom margin */
+  padding: 0; /* Ensure no padding */
+}
+.city {
+  display: block;
+  position: relative;
+  top: 20px;
+  margin-bottom: -80px; /* Use negative margin to pull closer */
+  margin-top: -30px; /* Remove top margin */
+  padding: 25px;
+}
+.date {
+  padding: none;
+  display: block;
+  position: relative;
+  bottom: 30px;
+  color: rgba(156, 154, 154, 0.957);
+}
+.time {
+  display: flex;
+  position: relative;
+  bottom: 85px;
+  left: 250px;
+  font-size: 30px;
+  font-weight: bold;
+}
+span {
+  font-size: 15px;
+  color: rgb(57, 55, 55);
 }
