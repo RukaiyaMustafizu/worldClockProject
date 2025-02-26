@@ -15,40 +15,56 @@ body {
   line-height: 40px;
   position: relative;
   left: 300px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   margin-top: 50px;
-  box-shadow: rgba(209, 206, 206, 0.588);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 select {
   display: block;
   width: 100%;
   padding: 18px;
-  border-radius: 2px;
+  border-radius: 5px;
   font-weight: bold;
   color: rgba(128, 128, 128, 0.849);
   margin: 0 auto;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
-hr {
-  border: none; /* Remove default border */
-  height: 1px;
-  background: repeating-linear-gradient(
-    to right,
-    rgba(156, 154, 154, 0.519),
-    rgba(156, 154, 154, 0.484) 5px,
-    transparent 5px,
-    transparent 10px
-  ); /* Create a dashed line effect */
-  margin: 0; /* Remove top and bottom margin */
-  padding: 0; /* Ensure no padding */
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.849);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.849);
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+  background-color: darkviolet;
 }
 .city {
   display: block;
   position: relative;
-  top: 20px;
-  margin-bottom: -80px; /* Use negative margin to pull closer */
-  margin-top: -30px; /* Remove top margin */
-  padding: 25px;
+  margin: 0; /* Remove all margins */
+  padding-top: 10px; /* Add padding to the top */
+  padding-bottom: 10px; /* Add padding to the bottom */
+  border-bottom: 1px dashed rgba(156, 154, 154, 0.849);
+}
+.city:last-child {
+  border-bottom: none; /* Remove border from the last city */
 }
 .date {
   padding: none;
@@ -65,7 +81,12 @@ hr {
   font-size: 30px;
   font-weight: bold;
 }
-span {
+small {
   font-size: 15px;
   color: rgb(57, 55, 55);
+  position: relative;
+  left: 5px;
+}
+.current-location {
+  background-color: rgba(128, 128, 128, 0.1);
 }
